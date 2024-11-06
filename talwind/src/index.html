@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind test</title>
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-gray-200">
+    <main class="m-8 h-dvh">
+      <div
+        class="grid grid-cols-2 bg-white rounded-3xl overflow-hidden shadow-lg"
+      >
+        <!-- First columns -->
+        <div class="flex flex-col gap-8">
+          <div class="grid grid-cols-2 w-full justify-center p-8">
+            <div class="self-start font-bold text-lg">Logo</div>
+            <select
+              class="w-auto h-12 border-2 border-gray-200 rounded-full px-12"
+            >
+              <option value="en">EN</option>
+              <option value="fr">FR</option>
+            </select>
+          </div>
+          <div class="px-24 pb-24 flex flex-col gap-8 items-center">
+            <h1 class="text-8xl font-bold">Hi there!</h1>
+            <p class="font-semibold">Welcome to Logo.Community Dashbord</p>
+            <button
+              class="border-2 border-gray-200 w-96 h-12 rounded-lg text-xs font-bold"
+            >
+              Log in with google
+            </button>
+            <div>
+              <p class="text-xs font-bold">------------ or ------------</p>
+            </div>
+            <div class="flex flex-col gap-4">
+              <input
+                class="border-2 border-gray-200 w-96 h-12 rounded-lg text-xs font-bold placeholder-black pl-3"
+                placeholder="Your email"
+                type="text"
+              />
+              <input
+                class="border-2 border-gray-200 w-96 h-12 rounded-lg text-xs font-bold placeholder-black pl-3"
+                placeholder="Your password"
+                type="password"
+              />
+              <a href="#" class="text-blue-600 text-xs font-bold self-end"
+                >Forgot password?</a
+              >
+            </div>
+            <button
+              class="border-2 border-black rounded-full w-96 h-12 text-xs font-bold text-white bg-black"
+            >
+              Log in
+            </button>
+            <p class="text-xs font-bold">
+              Dont have an account?
+              <a href="#" class="text-blue-600">Sign up</a>
+            </p>
+          </div>
+        </div>
+        <!-- Seconde columns -->
+        <div class="bg-black"></div>
+      </div>
+    </main>
+  </body>
+</html>
